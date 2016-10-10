@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oNav=document.getElementById("nav")
+				var oNavv=document.getElementById("navv")
+				oNav.onmouseover=oNavv.onmouseover=function(){
+					oNav.style.display='block'
+				}
+				oNav.onmouseout=oNavv.onmouseout=function(){
+					oNav.style.display='none'
+				}
+				oNav.onmousedown=function(){
+						setTimeout(function(){
+					oNav.style.display='none'
+				},1000)
+				}
+			}
+		</script>
+	</head>
+	
+	<body>
+		
+		<div>
+			<div class="header clear">
+				<ul>
+					<li id="navv"><a href="" >导航栏</a></li>
+		<div id="nav">
+			<div><a href="http://www.iqiyi.com" target="_blank">爱奇艺</a></div>
+			<div><a href="http://www.youku.com" target="_blank">优酷</a></div>
+			<div><a href="http://weibo.com" target="_blank">微博</a></div>
+			<div><a href="http://www.taobao.com/" target="_blank">淘宝网</a></div>
+			<div><a href="http://www.tmall.com/" target="_blank">天猫</a></div>
+			<div><a href="http://www.autohome.com.cn" target="_blank">汽车之家</a></div>
+			<div><a href="http://www.QQ.com" target="_blank">腾讯</a></div>
+			<div><a href="http://www.JD.com" target="_blank">京东</a></div>
+		</div>
+					<li><a href="http://www.nuomi.com/">糯米</a></li>
+					<li><a href="http://news.baidu.com">新闻</a></li>
+					<li><a href="http://www.hao123.com">hao123</a></li>
+					<li><a href="http://map.baidu.com">地图</a></li>
+					<li><a href="http://v.baidu.com">视频</a></li>
+					<li><a href="http://tieba.baidu.com/">贴吧</a></li>
+					<li><a href="https://passport.baidu.com/v2/login">登录</a></li>
+					<li><a href="">设置</a></li>
+					<li><a href="">更多产品</a></li>
+				</ul>
+			</div>
+			<!---->
+			<div class="cen">
+				<img src="img/logo.png"/>
+				<form action=" http://www.baidu.com/baidu" target="_blank" >
+					<input name="tn" type="hidden" value="baidu" />
+					<input type="text" name="word" size="30" class="inputText" value="" autofocus />
+					<input type="submit" class="inputSubmit" value="百度一下"/>   
+				</form>
+			</div>
+			<!---->
+			<div class="footer">
+				<div class="foot_cen">
+					<div class="foot01">
+							<div class="foot001">
+								<img src="img/01.png"/>
+							</div>
+							<div class="foot002">
+								<b>手机百度</b>
+								<br />
+							    <span>快人一步</span>
+							</div>
+					</div>
+					<div class="foot01">
+						<div class="foot001">
+							<img src="img/02.png"/>
+						</div>
+						<div class="foot002">
+							<b>百度糯米</b>
+							<br />
+							<span>一元大餐</span>
+						</div>
+					</div>
+					<div class="foot02">
+					<ul class="foot_ul">
+					<li><a href="//www.baidu.com/cache/sethelp/help.html" onmousedown="return ns_c({'fm':'behs','tab':'favorites','pos':0})" target="_blank">把百度设为首页</a></li>
+					<li><a href="http://home.baidu.com">关于百度</a></li>
+					<li><a href="http://ir.baidu.com">About  Baidu</a></li>
+					<li><a href="http://e.baidu.com/">百度推广</a></li>
+					</ul>
+					<p>&copy;2016 Baidu <a href="http://www.baidu.com/duty/" onmousedown="return ns_c({'fm':'behs','tab':'tj_duty'})">使用百度前必读</a> <a href="http://jianyi.baidu.com/">意见反馈</a> 京ICP证030173号&nbsp;&nbsp;<span class="icon_01">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+					<p><span class="icon_02">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>京公网安备11000002000001号</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
